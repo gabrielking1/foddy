@@ -1,0 +1,1184 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jon J’s cafe </title>
+
+   
+    <link rel="shortcut icon" href="/static/assets/images/icon/fave.png" type="image/png">
+
+ 
+
+    <link rel="stylesheet" href="{% static '/font-awesome/6.4.2/css/all.min.css' %}">
+
+
+
+
+
+
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/venobox.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/aos.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+
+    <style>
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+        
+    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+        border-radius:5px;
+        margin:5px;
+      border-color: red;
+      border-bottom: 3px solid red; /* Adjust the thickness of the red bar as needed */
+      background-color: red;color:white;
+    }
+    </style>
+</head>
+
+<body>
+
+
+
+
+    <!-- header part start  -->
+
+    <header class="header  header-two ">
+        <div class="container">
+            <div class="header-main">
+                <div class="header-left">
+                    <div class="header-left-btn">
+                        
+
+                        
+
+                    </div>
+                </div>
+
+
+                
+
+
+                <div class="header-right">
+                    <div class="header-right-item">
+                        <div class="header-right-inner">
+                            <div class="icon">
+                                <span>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15.75 14.25V13.0155C15.75 12.4022 15.3766 11.8506 14.8071 11.6228L13.2815 11.0126C12.5571 10.7229 11.7316 11.0367 11.3828 11.7345L11.25 12C11.25 12 9.375 11.625 7.875 10.125C6.375 8.625 6 6.75 6 6.75L6.26551 6.61724C6.96328 6.26836 7.27714 5.44285 6.98741 4.71852L6.37717 3.19291C6.14937 2.62343 5.59781 2.25 4.98445 2.25H3.75C2.92157 2.25 2.25 2.92157 2.25 3.75C2.25 10.3774 7.62258 15.75 14.25 15.75C15.0784 15.75 15.75 15.0784 15.75 14.25Z"
+                                            stroke-width="1.5" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </div>
+
+
+                            <div class="text">
+                                <a href="tel:+17077970462">+234 706 720 8917</a>
+                            </div>
+                        </div>
+                        <div class="header-right-inner">
+                            <div class="icon">
+                                <span>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.66699 10V5.83333C1.66699 3.99238 3.15938 2.5 5.00033 2.5H15.0003C16.8413 2.5 18.3337 3.99238 18.3337 5.83333V14.1667C18.3337 16.0076 16.8413 17.5 15.0003 17.5H6.66699M5.00033 6.66667L8.15133 8.76733C9.27099 9.51378 10.7297 9.51378 11.8493 8.76733L15.0003 6.66667M1.66699 12.5H6.66699M1.66699 15H6.66699"
+                                            stroke-width="1.5" stroke-linecap="round" />
+                                    </svg>
+                                </span>
+                            </div>
+
+
+                            <div class="text">
+                                <a href="mailto:jonj’scafe@gmail.com">jonj’scafe@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+        <!-- menu part start -->
+
+
+        <nav class="menu-bg ">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+
+                        <div class="nav-main">
+
+                            <div class="nav-main">
+                                <div class="logo">
+                                    <a href="{% url 'index' %}"> <img src="{% static 'assets/images/logo/logojjj.png' %}"
+                                            alt="logo"></a>
+                                </div>
+
+                                <div class="menu">
+                                    <ul>
+                                        <li><a href="{% url 'index' %}">Home
+                                                <span><i class="fa-solid fa-angle-right"></i></span>
+                                            </a>
+
+                                        
+
+
+                                        </li>
+                                        <li><a href="/food/">Menu</a></li>
+                                        <li><a href="#">Pages
+                                                <span>
+                                                    <i class="fa-solid fa-angle-down">
+
+                                                    </i>
+                                                </span>
+                                            </a>
+                                            <ul>
+                                                <li><a href="#about-us">About Us</a></li>
+                                                <li><a href="contact.html">Contact Us</a></li>
+                                                
+                                            </ul>
+                                        </li>
+
+                                        
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+
+                            
+
+
+
+
+                            <div class="nav-login-btn-main">
+                                {% if request.user.is_superuser%}
+                                <a href="/product/" class="main-btn-four">Product Upload</a>
+                                {%endif%}
+                                {% comment %} <a href="sign-up.html" class="main-btn">Sign Up</a> {% endcomment %}
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </nav>
+    </header>
+
+    <!-- mobile navigation start -->
+    <header class="mobile-header">
+        <div class="container-full">
+            <div class="mobile-header__container">
+                <div class="p-left">
+                    <div class="logo">
+                        <a href="{% url 'index' %}">
+                            <img src="{% static 'assets/images/logo/logojjj.png' %}" height="80px" width ="70px" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="p-right">
+                    <button id="nav-opn-btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- offcanvas -->
+    <aside id="offcanvas-nav">
+        <nav class="m-nav">
+            <button id="nav-cls-btn"><i class="fa-solid fa-xmark"></i></button>
+            <div class="logo">
+                <a href="#">
+                    <img src="{% static 'assets/images/logo/logojjj.png' %}" alt="logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li class="dropdown"><a href="{% url 'index' %}">Home </a>
+
+                    
+
+
+                </li>
+                <li><a href="/food/">Menu</a></li>
+                <li>
+                    <a href="#about-us">About Us</a>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+
+        </nav>
+    </aside>
+
+
+
+
+
+    <!-- header part end  -->
+
+
+    <main>
+
+
+        <!-- .banner-part-start -->
+
+
+
+        <section class="banner-two">
+            <div class="container">
+                
+                <div class="row">
+                    <div class="col-lg-6">
+
+                        <div class="banner-two-taitel">
+                            <h1 style="color:white"> Sculpting a Superb Dining Affair
+                                <br>
+                                 <h1 style="background: linear-gradient(rgba(255, 128, 128, 0.7), rgba(255, 255, 255, 0.1));
+                                 color: #B3FA0C; font-weight: bold; padding: 10px; border-radius: 25px;
+                                 animation: bounce 2s ease-in-out infinite;">
+                                 Jon J's Cafe
+                            </h1></h1>
+
+                             
+                                <p>
+                            <h4 style="background: linear-gradient(rgba(255, 128, 128, 0.7), rgba(255, 255, 255, 0.1));
+                                    color:white; font-weight: bold; padding: 10px; border-radius: 25px;
+                                    animation: bounce 2s ease-in-out infinite;">
+                                Jon J's Cafe offers a journey into a realm of culinary delight. Book your table today
+                                and allow us to transform your culinary aspirations into reality.
+                            </h4>
+
+
+
+                                </p>
+                                
+                                    
+                                
+                                
+                        </div>
+
+                        {% comment %} <div class="banner-taiteL-btn">
+
+                            <a href="#" class="main-btn main-btn-two ">
+                                <span>
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.333 22.1667V8.16667M16.333 22.1667H18.6663M16.333 22.1667H10.4997M16.333 8.16667C16.333 5.58934 14.2437 3.5 11.6663 3.5H6.99967C4.42235 3.5 2.33301 5.58934 2.33301 8.16667V17.5C2.33301 19.6761 3.82245 21.5043 5.83749 22.0208M16.333 8.16667H20.077C20.6698 8.16667 21.2404 8.3923 21.6728 8.79775L24.9289 11.8503C25.3994 12.2914 25.6663 12.9076 25.6663 13.5525V19.8333C25.6663 21.122 24.6217 22.1667 23.333 22.1667M23.333 22.1667C23.333 23.4553 22.2883 24.5 20.9997 24.5C19.711 24.5 18.6663 23.4553 18.6663 22.1667M23.333 22.1667C23.333 20.878 22.2883 19.8333 20.9997 19.8333C19.711 19.8333 18.6663 20.878 18.6663 22.1667M10.4997 22.1667C10.4997 23.4553 9.45501 24.5 8.16634 24.5C6.87768 24.5 5.83301 23.4553 5.83301 22.1667C5.83301 22.1177 5.83452 22.069 5.83749 22.0208M10.4997 22.1667C10.4997 20.878 9.45501 19.8333 8.16634 19.8333C6.92667 19.8333 5.91279 20.8001 5.83749 22.0208"
+                                            stroke-width="1.5" />
+                                        <path d="M11.6663 9.33203H9.33301" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M11.6667 14L7 14" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                Delivery</a>
+
+                            <a href="#" class=" main-btn-two-banner ">
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.1186 8.33333C14.1186 9.68336 13.0242 10.7778 11.6742 10.7778C10.3241 10.7778 9.22971 9.68336 9.22971 8.33333C9.22971 6.9833 10.3241 5.88889 11.6742 5.88889C13.0242 5.88889 14.1186 6.9833 14.1186 8.33333Z"
+                                            stroke-width="1.5" />
+                                        <path
+                                            d="M19.0075 8.33333C19.0075 12.3834 14.1186 18.1111 11.6742 18.1111C9.22971 18.1111 4.34082 12.3834 4.34082 8.33333C4.34082 4.28325 7.62407 1 11.6742 1C15.7242 1 19.0075 4.28325 19.0075 8.33333Z"
+                                            stroke-width="1.5" />
+                                        <path
+                                            d="M15.3412 15.668H16.7181C18.169 15.668 19.545 16.3124 20.4738 17.4271L21.7779 18.992C23.1047 20.5841 21.9725 23.0013 19.9 23.0013H3.44912C1.37662 23.0013 0.244465 20.5841 1.57124 18.992L2.87532 17.4271C3.80418 16.3124 5.18015 15.668 6.63107 15.668H8.0079"
+                                            stroke-width="1.5" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                Pick Up</a>
+
+                            <a href="#" class=" main-btn-two-banner">
+                                <span>
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.1226 25.6654H18.8768C21.5703 25.6654 23.7538 23.5817 23.7538 21.0113V15.3206C23.7538 14.4943 24.0978 13.7019 24.71 13.1176C26.1286 11.764 25.9442 9.52109 24.3218 8.3951L16.8682 3.22219C15.1581 2.03531 12.8413 2.03531 11.1311 3.22219L3.6776 8.3951C2.05519 9.52109 1.87078 11.764 3.28931 13.1176C3.90156 13.7019 4.24552 14.4943 4.24552 15.3206V21.0113C4.24552 23.5817 6.42906 25.6654 9.1226 25.6654Z"
+                                            stroke-width="1.5" stroke-linejoin="round" />
+                                        <path
+                                            d="M19.0218 18.2041C19.0218 20.8668 16.5108 25.436 13.9997 25.436C11.4886 25.436 8.97754 20.8668 8.97754 18.2041C8.97754 15.5414 11.226 13.3828 13.9997 13.3828C16.7734 13.3828 19.0218 15.5414 19.0218 18.2041Z"
+                                            stroke-width="1.5" />
+                                        <path
+                                            d="M15.5063 17.9028C15.5063 18.7348 14.8318 19.4094 13.9997 19.4094C13.1676 19.4094 12.493 18.7348 12.493 17.9028C12.493 17.0707 13.1676 16.3961 13.9997 16.3961C14.8318 16.3961 15.5063 17.0707 15.5063 17.9028Z"
+                                            stroke-width="1.5" />
+                                    </svg>
+                                </span>
+                                In Restaurant</a>
+
+                        </div> {% endcomment %}
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <!-- .banner-part-end -->
+
+
+
+        <!-- .Categories-part-start -->
+
+
+        <section class="categories categories-two s-padding">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6  ">
+                        <div class="categories-head">
+                            <h2>Our Categories</h2>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="categories-head-btn">
+                            <a href="/food/" class="main-btn">See more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row categories-mt-48px  ">
+                    {% for cat in category %}
+                    <div class="col-lg-3 col-md-6 res-mb-20px" data-aos="fade-right">
+                        
+                        <div class="categories-item  ">
+                            <div class="categories-icon">
+                                <div class="icon">
+                                    <span>
+                                        <svg width="52" height="52" viewBox="0 0 60 60" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_304_14569)">
+                                                <path
+                                                    d="M58.2413 42.421H55.5378C56.0779 41.4894 56.4121 40.4238 56.473 39.2862C57.0104 39.2464 57.6215 39.0615 58.2986 38.6426C59.1147 38.1381 59.665 37.3435 59.8893 36.3446C60.4043 34.0517 59.0232 30.7315 57.7799 28.3585H58.2413C59.2123 28.3585 59.9992 27.5716 59.9992 26.6011C59.9992 14.0007 49.6958 3.75 37.0313 3.75H22.9688C10.3043 3.75 0.000937866 14.0007 0.000937866 26.6011C0.000937866 27.5716 0.787834 28.3585 1.75875 28.3585H2.22018C0.976891 30.7315 -0.404641 34.0517 0.110801 36.3446C0.335106 37.3435 0.885338 38.1381 1.70153 38.6426C2.37856 39.0615 2.98968 39.2459 3.52709 39.2858C3.58798 40.4233 3.92214 41.489 4.46231 42.421H1.75875C0.787834 42.421 0.000937866 43.2079 0.000937866 44.1788C0.000937866 50.9633 5.52066 56.483 12.3052 56.483H47.6949C54.4794 56.483 59.9992 50.9633 59.9992 44.1788C59.9992 43.2079 59.2123 42.421 58.2413 42.421ZM22.9688 7.26563H37.0313C47.1616 7.26563 55.508 15.0018 56.4039 24.8433H3.59622C4.49206 15.0018 12.8385 7.26563 22.9688 7.26563ZM4.13546 34.9741C3.98806 35.1998 3.78573 35.5106 3.63192 35.7006C3.61178 35.6896 3.58981 35.6767 3.56646 35.6626C3.44149 35.4085 3.39251 34.157 4.6596 31.3893C5.21075 30.185 5.83651 29.0717 6.25857 28.3585H53.742C54.1595 29.0634 54.7761 30.1602 55.3258 31.3573C56.6076 34.146 56.5595 35.4071 56.4336 35.6626C56.4103 35.6767 56.3883 35.6896 56.3682 35.7006C56.2144 35.5106 56.0116 35.1998 55.8646 34.9741C55.1084 33.8146 53.8427 31.8741 51.2105 31.8741C48.7244 31.8741 47.4111 33.1879 46.4521 34.1469C45.5901 35.0089 45.1676 35.3897 44.1793 35.3897C43.1772 35.3897 42.7089 34.9796 41.8278 34.1268C40.8454 33.176 39.5 31.8741 37.0313 31.8741C34.5452 31.8741 33.2319 33.1879 32.2728 34.1469C31.4109 35.0089 30.9884 35.3897 30 35.3897C29.0117 35.3897 28.5892 35.0089 27.7272 34.1469C26.7682 33.1879 25.4549 31.8741 22.9688 31.8741C20.5001 31.8741 19.1547 33.176 18.1723 34.1268C17.2911 34.9796 16.8228 35.3897 15.8208 35.3897C14.8325 35.3897 14.41 35.0089 13.548 34.1469C12.589 33.1879 11.2757 31.8741 8.78955 31.8741C6.15741 31.8746 4.89169 33.815 4.13546 34.9741ZM52.9684 38.9054C52.9684 40.844 51.3909 42.421 49.4527 42.421H10.5474C8.60919 42.421 7.03174 40.844 7.03174 38.9054C7.03174 37.3046 8.09787 35.9294 9.61032 35.5156C10.0997 35.6905 10.4814 36.0521 11.0623 36.6326C12.0214 37.5916 13.3347 38.9054 15.8208 38.9054C18.29 38.9054 19.6349 37.6035 20.6173 36.6527C21.4985 35.7999 21.9667 35.3897 22.9688 35.3897C23.9571 35.3897 24.3796 35.771 25.2416 36.6326C26.2006 37.5916 27.5144 38.9054 30 38.9054C32.4857 38.9054 33.7995 37.5916 34.7585 36.6326C35.6205 35.771 36.043 35.3897 37.0313 35.3897C38.0333 35.3897 38.5012 35.7999 39.3828 36.6527C40.3652 37.6035 41.7101 38.9054 44.1793 38.9054C46.6654 38.9054 47.9787 37.5916 48.9377 36.6326C49.5186 36.0521 49.9004 35.6905 50.3898 35.5156C51.9022 35.9294 52.9684 37.3046 52.9684 38.9054ZM12.3052 52.9674C8.06079 52.9674 4.50946 49.943 3.6928 45.9366H22.3829L31.7579 52.9674H12.3052ZM28.2422 45.9366H45.9019L37.0354 52.5312L28.2422 45.9366ZM47.6949 52.9674H42.3395L51.7924 45.9128H56.3073C55.4906 49.9196 51.9393 52.9674 47.6949 52.9674Z" />
+                                                <path
+                                                    d="M24.7261 12.5391C24.7261 13.5095 23.9392 14.2969 22.9683 14.2969C21.9978 14.2969 21.2109 13.5095 21.2109 12.5391C21.2109 11.5681 21.9978 10.7812 22.9683 10.7812C23.9392 10.7812 24.7261 11.5681 24.7261 12.5391Z" />
+                                                <path
+                                                    d="M42.4219 16.0542C42.4219 17.0251 41.635 17.812 40.6641 17.812C39.6936 17.812 38.9062 17.0251 38.9062 16.0542C38.9062 15.0838 39.6936 14.2969 40.6641 14.2969C41.635 14.2969 42.4219 15.0838 42.4219 16.0542Z" />
+                                                <path
+                                                    d="M17.5781 16.0542C17.5781 17.0251 16.7912 17.812 15.8203 17.812C14.8494 17.812 14.0625 17.0251 14.0625 16.0542C14.0625 15.0838 14.8494 14.2969 15.8203 14.2969C16.7912 14.2969 17.5781 15.0838 17.5781 16.0542Z" />
+                                                <path
+                                                    d="M35.2734 12.5391C35.2734 13.5095 34.4861 14.2969 33.5156 14.2969C32.5447 14.2969 31.7578 13.5095 31.7578 12.5391C31.7578 11.5681 32.5447 10.7812 33.5156 10.7812C34.4861 10.7812 35.2734 11.5681 35.2734 12.5391Z" />
+                                                <path
+                                                    d="M31.7578 19.5703C31.7578 20.5412 30.9709 21.3281 30 21.3281C29.0291 21.3281 28.2422 20.5412 28.2422 19.5703C28.2422 18.5999 29.0291 17.8125 30 17.8125C30.9709 17.8125 31.7578 18.5999 31.7578 19.5703Z" />
+                                            </g>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="categories-item-text">
+                                <h3>{{cat.name}}</h3>
+                                <h4> 25 items</h4>
+                            </div>
+
+                        </div>
+                    </div>
+                    {%endfor%}
+                    
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- .Categories-part-end -->
+
+
+
+
+
+        <!-- Promotions part-start -->
+
+
+        <div class="promotions promotions-two">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-5">
+                        <div class="promotions-img promotions-img-two">
+                            <a href="foods-details.html"> <img src="{% static 'assets/images/thumb/PromoBanner-2.png' %}"
+                                    class="w-100" alt="thumb"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-7">
+                        <div class="promotions-img">
+
+                            <a href="foods-details.html"> <img src="{% static 'assets/images/banner/tj.jpg' %}"
+                                    class="w-100" alt="thumb"></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- Promotions part-end -->
+
+
+
+
+
+
+
+
+        <!-- Traditional part-start -->
+
+
+        <section class="traditional s-padding">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="traditional-head">
+                            <h2>Delicious Dishes
+                                </h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grid Tab -->
+              
+                    <!-- Filter Title -->
+                    <div class="row justify-content-center" style="padding:15px;margin:3px; border:0.2px offset;" >
+                        <div class="col-lg-6">
+                            <ul class="nav nav-tabs" id="myTabs">
+                                
+                                    
+                                    {% for cat in category %}
+                                      <li class="nav-item">
+                                        <a class="nav-link" id="{{cat.name}}-tab" data-toggle="tab" href="#{{cat.name}}">{{cat.name}}</a>
+                                      </li>
+                                    {% endfor %}
+                                   
+                                 
+                                
+                            </ul>
+                        </div>
+                    </div>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="Pizza" data-aos="fade-up">
+                                <div class="tab-content row">
+                        
+                                    {% for product in pizza %}
+                                    <div class="col-lg-4 col-md-6 shaf-item res-mb-20px  " id="Pizza">
+            
+                                        <div class="featured-item" data-aos="fade-up">
+                                            <div class="featured-item-img">
+                                                <img src="{{product.image.url}}"  height="400px" width="100px" class="w-100"
+                                                    alt="featured-thumb">
+            
+                                                <div class="featured-item-img-overlay">
+                                                    <div class="featured-item-img-over-text">
+                                                        
+                                                        
+                                                    </div>
+                                                </div>
+            
+                                            </div>
+            
+                                            <div class="featured-item-text">
+                                                <div class="text-item">
+                                                    <div class="left">
+                                                        <h3>${{product.price}}</h3>
+                                                    </div>
+                                                    
+                                                </div>
+            
+                                                <div class="text-item-center">
+                                                    <h3><a href="/food/">{{product.name}}</a></h3>
+                                                </div>
+            
+                                                <div class="text-item-center-item-box">
+                                                    <div class="text-item-center-item">
+                                                        <div class="icon">
+                                                            <span>
+                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M8 12L10.5347 14.2812C10.9662 14.6696 11.6366 14.6101 11.993 14.1519L16 9M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                                                        stroke="#FE724C" stroke-width="1.5" stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                </svg>
+                                                            </span>
+                                                        </div>
+            
+                                                        <div class="text">
+                                                            <h5>{{product.ingredient1}}</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-item-center-item">
+                                                        <div class="icon">
+                                                            <span>
+                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M8 12L10.5347 14.2812C10.9662 14.6696 11.6366 14.6101 11.993 14.1519L16 9M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                                                        stroke="#FE724C" stroke-width="1.5" stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                </svg>
+                                                            </span>
+                                                        </div>
+            
+                                                        <div class="text">
+                                                            <h5>{{product.ingredient2}}</h5>
+                                                        </div>
+                                                    </div>
+            
+                                                    {%comment%}<div class="featured-item-btn">
+                                                        <a href="shopping-cart.html" class="main-btn-three">
+                                                            <span>
+                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M6 4H18C20.2091 4 22 5.79086 22 8V13C22 15.2091 20.2091 17 18 17H10C7.79086 17 6 15.2091 6 13V4ZM6 4C6 2.89543 5.10457 2 4 2H2"
+                                                                        stroke-width="1.5" stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                    <path
+                                                                        d="M11 20.5C11 21.3284 10.3284 22 9.5 22C8.67157 22 8 21.3284 8 20.5C8 19.6716 8.67157 19 9.5 19C10.3284 19 11 19.6716 11 20.5Z"
+                                                                        stroke-width="1.5" />
+                                                                    <path
+                                                                        d="M20 20.5C20 21.3284 19.3284 22 18.5 22C17.6716 22 17 21.3284 17 20.5C17 19.6716 17.6716 19 18.5 19C19.3284 19 20 19.6716 20 20.5Z"
+                                                                        stroke-width="1.5" />
+                                                                    <path d="M14 8L14 13" stroke-width="1.5" stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                    <path d="M16.5 10.5L11.5 10.5" stroke-width="1.5"
+                                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                                </svg>
+                                                            </span>
+                                                            Add to Cart
+                                                        </a>
+                                                    </div>{%endcomment%}
+                                                </div>
+            
+                                            </div>
+                                        </div>
+            
+            
+            
+                                    </div>
+                                    {%endfor%}
+                                </div>
+                            </div>
+                            <div class="tab-pane fade show" id="Burger">
+                                <div class="tab-content row">
+                        
+                                    {% for product in burger %}
+                                    <div class="col-lg-4 col-md-6 shaf-item res-mb-20px  " id="Burger">
+            
+                                        <div class="featured-item" data-aos="fade-up">
+                                            <div class="featured-item-img">
+                                                <img src="{{product.image.url}}"  height="400px" width="100px" class="w-100"
+                                                    alt="featured-thumb">
+            
+                                                <div class="featured-item-img-overlay">
+                                                    <div class="featured-item-img-over-text">
+                                                        
+                                                        
+                                                    </div>
+                                                </div>
+            
+                                            </div>
+            
+                                            <div class="featured-item-text">
+                                                <div class="text-item">
+                                                    <div class="left">
+                                                        <h3>${{product.price}}</h3>
+                                                    </div>
+                                                    
+                                                </div>
+            
+                                                <div class="text-item-center">
+                                                    <h3><a href="/food/">{{product.name}}</a></h3>
+                                                </div>
+            
+                                                <div class="text-item-center-item-box">
+                                                    <div class="text-item-center-item">
+                                                        <div class="icon">
+                                                            <span>
+                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M8 12L10.5347 14.2812C10.9662 14.6696 11.6366 14.6101 11.993 14.1519L16 9M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                                                        stroke="#FE724C" stroke-width="1.5" stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                </svg>
+                                                            </span>
+                                                        </div>
+            
+                                                        <div class="text">
+                                                            <h5>{{product.ingredient1}}</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-item-center-item">
+                                                        <div class="icon">
+                                                            <span>
+                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M8 12L10.5347 14.2812C10.9662 14.6696 11.6366 14.6101 11.993 14.1519L16 9M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                                                        stroke="#FE724C" stroke-width="1.5" stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                </svg>
+                                                            </span>
+                                                        </div>
+            
+                                                        <div class="text">
+                                                            <h5>{{product.ingredient2}}</h5>
+                                                        </div>
+                                                    </div>
+            
+                                                    {%comment%}<div class="featured-item-btn">
+                                                        <a href="shopping-cart.html" class="main-btn-three">
+                                                            <span>
+                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M6 4H18C20.2091 4 22 5.79086 22 8V13C22 15.2091 20.2091 17 18 17H10C7.79086 17 6 15.2091 6 13V4ZM6 4C6 2.89543 5.10457 2 4 2H2"
+                                                                        stroke-width="1.5" stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                    <path
+                                                                        d="M11 20.5C11 21.3284 10.3284 22 9.5 22C8.67157 22 8 21.3284 8 20.5C8 19.6716 8.67157 19 9.5 19C10.3284 19 11 19.6716 11 20.5Z"
+                                                                        stroke-width="1.5" />
+                                                                    <path
+                                                                        d="M20 20.5C20 21.3284 19.3284 22 18.5 22C17.6716 22 17 21.3284 17 20.5C17 19.6716 17.6716 19 18.5 19C19.3284 19 20 19.6716 20 20.5Z"
+                                                                        stroke-width="1.5" />
+                                                                    <path d="M14 8L14 13" stroke-width="1.5" stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                    <path d="M16.5 10.5L11.5 10.5" stroke-width="1.5"
+                                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                                </svg>
+                                                            </span>
+                                                            Add to Cart
+                                                        </a>
+                                                    </div>{%endcomment%}
+                                                </div>
+            
+                                            </div>
+                                        </div>
+            
+            
+            
+                                    </div>
+                                    {%endfor%}
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade show" id="Sandwiches">
+                                <div class="tab-content row">
+                        
+                                    {% for product in sandwiches %}
+                                    <div class="col-lg-4 col-md-6 shaf-item res-mb-20px  " id="Sandwiches">
+            
+                                        <div class="featured-item" data-aos="fade-up">
+                                            <div class="featured-item-img">
+                                                <img src="{{product.image.url}}"  height="400px" width="100px" class="w-100"
+                                                    alt="featured-thumb">
+            
+                                                <div class="featured-item-img-overlay">
+                                                    <div class="featured-item-img-over-text">
+                                                        
+                                                        
+                                                    </div>
+                                                </div>
+            
+                                            </div>
+            
+                                            <div class="featured-item-text">
+                                                <div class="text-item">
+                                                    <div class="left">
+                                                        <h3>${{product.price}}</h3>
+                                                    </div>
+                                                    
+                                                </div>
+            
+                                                <div class="text-item-center">
+                                                    <h3><a href="/food/">{{product.name}}</a></h3>
+                                                </div>
+            
+                                                <div class="text-item-center-item-box">
+                                                    <div class="text-item-center-item">
+                                                        <div class="icon">
+                                                            <span>
+                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M8 12L10.5347 14.2812C10.9662 14.6696 11.6366 14.6101 11.993 14.1519L16 9M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                                                        stroke="#FE724C" stroke-width="1.5" stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                </svg>
+                                                            </span>
+                                                        </div>
+            
+                                                        <div class="text">
+                                                            <h5>{{product.ingredient1}}</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-item-center-item">
+                                                        <div class="icon">
+                                                            <span>
+                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M8 12L10.5347 14.2812C10.9662 14.6696 11.6366 14.6101 11.993 14.1519L16 9M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                                                        stroke="#FE724C" stroke-width="1.5" stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                </svg>
+                                                            </span>
+                                                        </div>
+            
+                                                        <div class="text">
+                                                            <h5>{{product.ingredient2}}</h5>
+                                                        </div>
+                                                    </div>
+            
+                                                    {%comment%}<div class="featured-item-btn">
+                                                        <a href="shopping-cart.html" class="main-btn-three">
+                                                            <span>
+                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M6 4H18C20.2091 4 22 5.79086 22 8V13C22 15.2091 20.2091 17 18 17H10C7.79086 17 6 15.2091 6 13V4ZM6 4C6 2.89543 5.10457 2 4 2H2"
+                                                                        stroke-width="1.5" stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                    <path
+                                                                        d="M11 20.5C11 21.3284 10.3284 22 9.5 22C8.67157 22 8 21.3284 8 20.5C8 19.6716 8.67157 19 9.5 19C10.3284 19 11 19.6716 11 20.5Z"
+                                                                        stroke-width="1.5" />
+                                                                    <path
+                                                                        d="M20 20.5C20 21.3284 19.3284 22 18.5 22C17.6716 22 17 21.3284 17 20.5C17 19.6716 17.6716 19 18.5 19C19.3284 19 20 19.6716 20 20.5Z"
+                                                                        stroke-width="1.5" />
+                                                                    <path d="M14 8L14 13" stroke-width="1.5" stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                    <path d="M16.5 10.5L11.5 10.5" stroke-width="1.5"
+                                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                                </svg>
+                                                            </span>
+                                                            Add to Cart
+                                                        </a>
+                                                    </div>{%endcomment%}
+                                                </div>
+            
+                                            </div>
+                                        </div>
+            
+            
+            
+                                    </div>
+                                    {%endfor%}
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade show" id="Pasta">
+                                <div class="tab-content row">
+                        
+                                    {% for product in pasta %}
+                                    <div class="col-lg-4 col-md-6 shaf-item res-mb-20px  " id="Pasta">
+            
+                                        <div class="featured-item" data-aos="fade-up">
+                                            <div class="featured-item-img">
+                                                <img src="{{product.image.url}}"  height="400px" width="100px" class="w-100"
+                                                    alt="featured-thumb">
+            
+                                                <div class="featured-item-img-overlay">
+                                                    <div class="featured-item-img-over-text">
+                                                        
+                                                        
+                                                    </div>
+                                                </div>
+            
+                                            </div>
+            
+                                            <div class="featured-item-text">
+                                                <div class="text-item">
+                                                    <div class="left">
+                                                        <h3>${{product.price}}</h3>
+                                                    </div>
+                                                    
+                                                </div>
+            
+                                                <div class="text-item-center">
+                                                    <h3><a href="/food/">{{product.name}}</a></h3>
+                                                </div>
+            
+                                                <div class="text-item-center-item-box">
+                                                    <div class="text-item-center-item">
+                                                        <div class="icon">
+                                                            <span>
+                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M8 12L10.5347 14.2812C10.9662 14.6696 11.6366 14.6101 11.993 14.1519L16 9M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                                                        stroke="#FE724C" stroke-width="1.5" stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                </svg>
+                                                            </span>
+                                                        </div>
+            
+                                                        <div class="text">
+                                                            <h5>{{product.ingredient1}}</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-item-center-item">
+                                                        <div class="icon">
+                                                            <span>
+                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M8 12L10.5347 14.2812C10.9662 14.6696 11.6366 14.6101 11.993 14.1519L16 9M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                                                        stroke="#FE724C" stroke-width="1.5" stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                </svg>
+                                                            </span>
+                                                        </div>
+            
+                                                        <div class="text">
+                                                            <h5>{{product.ingredient2}}</h5>
+                                                        </div>
+                                                    </div>
+            
+                                                    {%comment%}<div class="featured-item-btn">
+                                                        <a href="shopping-cart.html" class="main-btn-three">
+                                                            <span>
+                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M6 4H18C20.2091 4 22 5.79086 22 8V13C22 15.2091 20.2091 17 18 17H10C7.79086 17 6 15.2091 6 13V4ZM6 4C6 2.89543 5.10457 2 4 2H2"
+                                                                        stroke-width="1.5" stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                    <path
+                                                                        d="M11 20.5C11 21.3284 10.3284 22 9.5 22C8.67157 22 8 21.3284 8 20.5C8 19.6716 8.67157 19 9.5 19C10.3284 19 11 19.6716 11 20.5Z"
+                                                                        stroke-width="1.5" />
+                                                                    <path
+                                                                        d="M20 20.5C20 21.3284 19.3284 22 18.5 22C17.6716 22 17 21.3284 17 20.5C17 19.6716 17.6716 19 18.5 19C19.3284 19 20 19.6716 20 20.5Z"
+                                                                        stroke-width="1.5" />
+                                                                    <path d="M14 8L14 13" stroke-width="1.5" stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                    <path d="M16.5 10.5L11.5 10.5" stroke-width="1.5"
+                                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                                </svg>
+                                                            </span>
+                                                            Add to Cart
+                                                        </a>
+                                                    </div>{%endcomment%}
+                                                </div>
+            
+                                            </div>
+                                        </div>
+            
+            
+            
+                                    </div>
+                                    {%endfor%}
+                                </div>
+                            </div>
+                    </div>
+                    
+                    
+                                          
+
+                        
+                 
+
+                    <div class="row">
+
+                        <div class="col-lg-12">
+                            <div class="traditional-btn">
+                                <a href="/food/" class="main-btn-four">Browser All</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+       
+            
+            </section>
+       
+
+
+        <!-- Customer part-start -->
+
+        <section class="customer s-padding" id="about-us" style="color:white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="customer-head mb-48px">
+                            <h2>About Us</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="about-us s-padding">
+                    <div class="container">
+                        <div class="row align-items-center ">
+                            <div class="col-lg-6 ">
+                                <div class="about-us-img">
+                                    <img src="/static/assets/images/thumb/about-thumb.png" class="w-100" alt="thumb">
+        
+        
+        
+                                    <div class="about-us-img-btn-img">
+        
+                                        <div class="about-us-img-btn-img-main">
+                                            <img src="/static/assets/images/small/Button.png" alt="img">
+                                            <div class="about-us-img-btn-img-overlay">
+                                                <h2>50</h2>
+                                                <span>Years</span>
+                                            </div>
+                                        </div>
+        
+        
+        
+        
+        
+        
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col-lg-6 about-pl-45px" data-aos="fade-left">
+                                <div class="about-us-head">
+                                    <h3 style="color:whitesmoke">The narrative of culinary excellence unfolds at Jon J's Cafe.</h3>
+        
+                                    <h5 style="color:honeydew">Welcome to Jon J's Cafe, a culinary haven where Classic American flavors merge seamlessly with soulful delights! Discover a symphony of tastes in our renowned Hennessy wings, offering a spectrum from mild to blazing hot. 
+                                        Dive into the talk-of-the-town Philly cheese steak egg rolls, a fusion masterpiece blending tender steak, melted cheese, and sautéed onions and peppers in a crispy embrace.
+
+                                        Our showstopper, the Monte Cristo deep-fried sandwich, elevates the classic with layers of ham, turkey, and Swiss cheese dipped in delicate batter, delivering a crispy, savory, and slightly sweet sensation.
+                                        
+                                        At Jon J's, we celebrate the shared joy of good food and memorable experiences. Our curated menu, reflecting over two decades of expertise, blends Classic American dishes with soulful twists. 
+                                        Whether you seek a cozy spot for a delightful meal or a taste of soulful American cuisine, join us at Jon J's Cafe. Let's redefine the meaning of "Classic American with a touch of soul," one dish at a time. 
+                                        Your culinary adventure awaits in every flavorful detail! </h5>
+                                </div>
+        
+                                <div class="about-us-text" >
+                                    <p style="color:ghostwhite">With over two decades of expertise, we specialize in delivering high-quality house booking services, 
+                                        catering to your incredible dreams and ensuring your utmost happiness.</p>
+                                </div>
+        
+                                <div class="row about-mt-48px">
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="about-us-item">
+                                            <div class="icon">
+                                                <img src="/static/assets/images/icon/about-icon-1.png" alt="icon">
+                                            </div>
+        
+                                            <div class="text">
+                                                <h3>90k+ Customers</h3>
+        
+                                                <p>Believe in our service & Care</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="about-us-item about-us-item-resmt ">
+                                            <div class="icon">
+                                                <img src="/static/assets/images/icon/about-icon-2.png" alt="icon">
+                                            </div>
+        
+                                            <div class="text">
+                                                <h3>100+ Branch</h3>
+        
+                                                <p>Food ready for occupancy</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+
+    
+
+
+    </main>
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12" data-aos="fade-right">
+                    <div class="footer-logo">
+                        <div class="logo">
+                            <img src="{% static 'assets/images/logo/logojjj.png' %}"  alt="logo">
+                        </div>
+                    </div>
+
+                    <div class="footer-text">
+                        <h4>At Jon J’s cafe, we welcome you to indulge in a flavorful and delightful journey. Our tables offer more than just a place to sit; 
+                            they provide an experience of taste and joy..</h4>
+                    </div>
+
+                    <div class="footer-icon">
+                        <div class="icon">
+                            <a href="https://www.facebook.com/" target="_blank"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-8 mol-md-12 ">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3" data-aos="fade-right" data-aos-delay="100">
+                            <div class="quick-line-item">
+                                <div class="quick-line-item-head">
+                                    <h3>Quick Link</h3>
+                                </div>
+
+
+                                <div class="quick-line-menu">
+                                    <ul>
+                                       
+                                        <li>
+                                            <a href="#about-us">About Us</a>
+                                        </li>
+                                        
+                                       
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3" data-aos="fade-right" data-aos-delay="200">
+                            <div class="quick-line-item">
+                                <div class="quick-line-item-head">
+                                    <h3>Terms & Privacy</h3>
+                                </div>
+
+                                <div class="quick-line-menu">
+                                    <ul>
+                                        <li>
+                                            <a href="trust-safety.html">Trust & Safety</a>
+                                        </li>
+                                        <li>
+                                            <a href="terms-service.html">Terms of Service</a>
+                                        </li>
+                                        <li>
+                                            <a href="privacy-policy.html">Privacy Policy</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6" data-aos="fade-right" data-aos-delay="300">
+                            <div class="quick-line-item">
+                                <div class="quick-line-item-head">
+                                    <h3>Subscribe our Newsletter</h3>
+                                </div>
+
+                                <div class="quick-line-btn">
+                                    <div class="icon">
+                                        <img src="{% static 'assets/images/icon/sms.png' %}" alt="icon">
+                                    </div>
+                                    <input type="email" class="form-control" id="exampleFormControlInput6"
+                                        placeholder="Your email">
+                                    <a href="#" class="main-btn-four">Subscribe</a>
+                                </div>
+
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="copyright-text">
+                        <h4>©<script>document.write(/\d{4}/.exec(Date())[0])</script><span>Jon J’s cafe</span>. All rights reserved</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="{% static 'assets/js/jquery-3.6.3.min.js' %}"></script>
+    <script src="{% static 'assets/js/venobox.min.js' %}"></script>
+    <script src="{% static 'assets/js/aos.js' %}"></script>
+    <script src="{% static 'assets/js/slick.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.shuffle.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/js/custom.js' %}"></script>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>
